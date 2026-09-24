@@ -5,7 +5,7 @@ Public marketing website for FeedGuard, a SkyDev SaaS product for safer supplier
 ## Purpose
 
 - Product information
-- Public pricing
+- Beta plan information
 - Lemon Squeezy and business verification
 - Future public landing page
 

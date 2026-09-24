@@ -108,6 +108,15 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.035em; }
 .risk-card h3 { margin: 3.2rem 0 .75rem; font-size: 1.08rem; }
 .risk-card p { margin: 0; color: var(--muted); font-size: .9rem; }
 
+.audience { padding: 80px 0; color: var(--white); background: #0c1827; }
+.audience .section-kicker { color: var(--teal-light); }
+.audience h2 { max-width: 600px; margin-bottom: 0; color: var(--white); font-size: clamp(1.8rem, 3vw, 2.8rem); }
+.audience-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 5rem; align-items: center; }
+.audience-list { display: grid; gap: 1px; overflow: hidden; background: var(--line-dark); border: 1px solid var(--line-dark); border-radius: 14px; }
+.audience-list article { display: grid; grid-template-columns: 42px 1fr; gap: 1rem; align-items: center; min-height: 78px; padding: 1rem 1.25rem; background: var(--ink-soft); }
+.audience-list span { color: var(--teal-light); font-size: .68rem; font-weight: 800; }
+.audience-list p { margin: 0; color: #c4d0da; font-size: .92rem; }
+
 .workflow { background: var(--white); }
 .steps { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--line); }
 .steps li { position: relative; padding: 2rem 1.3rem 0 0; }
@@ -146,6 +155,8 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.035em; }
 .price { display: flex; align-items: baseline; gap: .45rem; margin-bottom: .7rem; }
 .price span { color: var(--ink); font-size: 3rem; font-weight: 780; letter-spacing: -.05em; }
 .featured .price span { color: var(--white); }
+.price.plan-status { min-height: 86px; align-items: center; }
+.price.plan-status span { max-width: 280px; font-size: 1.85rem; line-height: 1.12; letter-spacing: -.035em; }
 .price small, .price-card > div > p:last-child { color: var(--muted); }
 .featured .price small, .featured > div > p:last-child { color: #8ea1b3; }
 .price-card ul { display: grid; gap: .85rem; margin: 2rem 0; padding: 1.7rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); list-style: none; }
@@ -198,7 +209,7 @@ footer { padding: 70px 0 30px; color: #8da0b2; background: var(--ink); }
   .hero-grid { grid-template-columns: 1fr; gap: 4rem; }
   .hero-copy { max-width: 740px; }
   .product-frame { max-width: 720px; transform: none; }
-  .split-heading, .safety-layout, .faq-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .split-heading, .audience-layout, .safety-layout, .faq-layout { grid-template-columns: 1fr; gap: 3rem; }
   .risk-grid { grid-template-columns: 1fr 1fr; }
   .risk-card:nth-child(2) { border-right: 0; }
   .risk-card:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
