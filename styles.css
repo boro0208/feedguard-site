@@ -155,8 +155,6 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.035em; }
 .price { display: flex; align-items: baseline; gap: .45rem; margin-bottom: .7rem; }
 .price span { color: var(--ink); font-size: 3rem; font-weight: 780; letter-spacing: -.05em; }
 .featured .price span { color: var(--white); }
-.price.plan-status { min-height: 86px; align-items: center; }
-.price.plan-status span { max-width: 280px; font-size: 1.85rem; line-height: 1.12; letter-spacing: -.035em; }
 .price small, .price-card > div > p:last-child { color: var(--muted); }
 .featured .price small, .featured > div > p:last-child { color: #8ea1b3; }
 .price-card ul { display: grid; gap: .85rem; margin: 2rem 0; padding: 1.7rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); list-style: none; }
