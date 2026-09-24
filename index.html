@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FeedGuard — Safer Amazon Feed Validation</title>
+  <meta name="description" content="FeedGuard helps Amazon sellers validate supplier CSV and XLSX feeds, detect risky SKU, price and quantity changes, and review problems before uploading to Seller Central.">
+  <meta property="og:title" content="FeedGuard — Safer Amazon Feed Validation">
+  <meta property="og:description" content="Catch dangerous supplier feed changes before they reach Amazon.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#07101c">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="index.html" aria-label="FeedGuard home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>FeedGuard</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="button button-small button-outline" href="#pricing">View plans</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse" aria-hidden="true"></span> Currently preparing for beta launch</div>
+          <h1>Catch dangerous feed changes <span>before they reach Amazon.</span></h1>
+          <p class="hero-lede">FeedGuard validates supplier spreadsheets, detects suspicious SKU, price and quantity changes, and helps Amazon sellers review problems before uploading a feed to Seller Central.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#pricing">View plans <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="#how-it-works">See how it works</a>
+          </div>
+          <ul class="trust-line" aria-label="Product highlights">
+            <li>CSV &amp; XLSX</li>
+            <li>Deterministic checks</li>
+            <li>Human-reviewed export</li>
+          </ul>
+        </div>
+
+        <div class="product-frame" aria-label="Illustrative FeedGuard validation dashboard">
+          <div class="frame-bar">
+            <div class="frame-title"><span class="shield-mini" aria-hidden="true">F</span> Feed validation</div>
+            <span class="sample-label">Illustrative</span>
+          </div>
+          <div class="frame-body">
+            <div class="run-meta">
+              <div><span class="meta-label">SUPPLIER FEED</span><strong>September catalog.xlsx</strong></div>
+              <span class="status-complete">Review ready</span>
+            </div>
+            <div class="metric-grid">
+              <div class="metric"><span>Rows checked</span><strong>1,842</strong></div>
+              <div class="metric pass"><span>PASS</span><strong>1,731</strong></div>
+              <div class="metric warning"><span>WARNING</span><strong>94</strong></div>
+              <div class="metric block"><span>BLOCK</span><strong>17</strong></div>
+            </div>
+            <div class="result-list">
+              <div class="result-row">
+                <span class="result-icon block-icon" aria-hidden="true">!</span>
+                <div><strong>SKU ABC-102</strong><span>Price change +74%</span></div>
+                <span class="tag tag-block">BLOCK</span>
+              </div>
+              <div class="result-row">
+                <span class="result-icon warn-icon" aria-hidden="true">↗</span>
+                <div><strong>SKU TV-2001</strong><span>Quantity 0 → 850</span></div>
+                <span class="tag tag-warning">WARNING</span>
+              </div>
+              <div class="result-row muted-row">
+                <span class="result-icon pass-icon" aria-hidden="true">✓</span>
+                <div><strong>1,731 rows</strong><span>Ready for review</span></div>
+                <span class="tag tag-pass">PASS</span>
+              </div>
+            </div>
+            <div class="frame-note"><span aria-hidden="true">⊘</span> Blocked rows are excluded from production export by default.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section" id="features">
+      <div class="shell split-heading">
+        <div>
+          <p class="section-kicker">THE RISK</p>
+          <h2>One bad spreadsheet can create expensive marketplace mistakes.</h2>
+        </div>
+        <p>Supplier feeds change constantly. A misplaced decimal, incorrect mapping or sudden stock jump can become a catalog-wide problem if it reaches Seller Central unchecked.</p>
+      </div>
+      <div class="shell risk-grid">
+        <article class="risk-card"><span>01</span><h3>Wrong SKU mappings</h3><p>Supplier identifiers can point to the wrong Amazon listing.</p></article>
+        <article class="risk-card"><span>02</span><h3>Unexpected price jumps</h3><p>Large increases or crashes can hide in thousands of routine rows.</p></article>
+        <article class="risk-card"><span>03</span><h3>Quantity mistakes</h3><p>Stock wipes and implausible increases deserve a closer look.</p></article>
+        <article class="risk-card"><span>04</span><h3>Malformed data</h3><p>Missing products and damaged identifiers can silently break updates.</p></article>
+      </div>
+    </section>
+
+    <section class="workflow section" id="how-it-works">
+      <div class="shell">
+        <div class="section-intro centered">
+          <p class="section-kicker">A CONTROLLED WORKFLOW</p>
+          <h2>From supplier file to reviewed export.</h2>
+          <p>FeedGuard adds a deliberate safety layer before you upload changes to Seller Central.</p>
+        </div>
+        <ol class="steps">
+          <li><span class="step-number">01</span><div><h3>Upload supplier feed</h3><p>Start with a supplier CSV or XLSX file.</p></div></li>
+          <li><span class="step-number">02</span><div><h3>Map supplier SKUs</h3><p>Keep supplier identifiers aligned with your Amazon SKUs.</p></div></li>
+          <li><span class="step-number">03</span><div><h3>Validate changes</h3><p>Deterministic rules check prices, quantities, identifiers and feed changes.</p></div></li>
+          <li><span class="step-number">04</span><div><h3>Review results</h3><p>Investigate warnings and blocks before anything leaves FeedGuard.</p></div></li>
+          <li><span class="step-number">05</span><div><h3>Export safely</h3><p>Generate the reviewed file and upload it manually to Seller Central.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="safety section">
+      <div class="shell safety-layout">
+        <div class="safety-copy">
+          <p class="section-kicker">SAFETY BY DESIGN</p>
+          <h2>Built for cautious feed updates.</h2>
+          <p>FeedGuard helps you slow down the changes that deserve attention while keeping routine feed work clear and structured.</p>
+          <div class="baseline-panel" aria-label="Baseline comparison example">
+            <div class="baseline-head"><span>Baseline comparison</span><span class="live-dot">Ready</span></div>
+            <div class="compare-row"><span>Previous confirmed price</span><strong>€24.90</strong></div>
+            <div class="compare-row"><span>New supplier price</span><strong>€6.20</strong></div>
+            <div class="delta-row"><span>Detected change</span><strong>−75.1%</strong></div>
+          </div>
+        </div>
+        <div class="principles-grid">
+          <article><span class="principle-icon">01</span><h3>Deterministic rules</h3><p>No AI decides whether a dangerous row passes.</p></article>
+          <article><span class="principle-icon">02</span><h3>Blocked rows stay out</h3><p>BLOCK rows are excluded from production export by default.</p></article>
+          <article><span class="principle-icon">03</span><h3>Baseline comparison</h3><p>Compare new supplier data with previously confirmed data.</p></article>
+          <article><span class="principle-icon">04</span><h3>Human confirmation</h3><p>You review changes before the confirmed baseline advances.</p></article>
+          <article><span class="principle-icon">05</span><h3>Data isolation</h3><p>Organizations are separated from each other within the service.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section" id="pricing">
+      <div class="shell">
+        <div class="section-intro centered">
+          <p class="section-kicker">SIMPLE MONTHLY PLANS</p>
+          <h2>Choose the protection your catalog needs.</h2>
+          <p>Start with validation, then add production export as your workflow grows.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div><p class="plan-name">FREE</p><div class="price"><span>€0</span><small>/ month</small></div><p>Explore safer supplier feed validation.</p></div>
+            <ul><li>1 active supplier</li><li>Up to 500 rows per feed</li><li>Feed validation</li><li>PASS / WARNING / BLOCK review</li><li class="not-included">No production export</li></ul>
+            <a class="button button-plan" href="#contact">Start Free</a>
+          </article>
+          <article class="price-card featured">
+            <div class="popular">RECOMMENDED</div>
+            <div><p class="plan-name">PRO</p><div class="price"><span>€29</span><small>/ month</small></div><p>For sellers running regular catalog updates.</p></div>
+            <ul><li>Up to 5 active suppliers</li><li>Up to 20,000 rows per feed</li><li>Production export</li><li>Feed validation and review</li><li>Baseline comparison</li></ul>
+            <a class="button button-primary" href="#contact">Choose Pro</a>
+          </article>
+          <article class="price-card">
+            <div><p class="plan-name">AGENCY</p><div class="price"><span>€79</span><small>/ month</small></div><p>For larger catalogs and supplier workflows.</p></div>
+            <ul><li>Up to 25 active suppliers</li><li>Up to 100,000 rows per feed</li><li>Production export</li><li>Priority processing</li><li>Built for larger catalog workflows</li></ul>
+            <a class="button button-plan" href="#contact">Choose Agency</a>
+          </article>
+        </div>
+        <p class="beta-note">FeedGuard is preparing for beta launch. Plan limits and features may evolve during the beta period.</p>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="shell faq-layout">
+        <div class="faq-heading"><p class="section-kicker">FAQ</p><h2>Clear answers before you start.</h2><p>FeedGuard is designed as a review layer, not an automatic marketplace connection.</p></div>
+        <div class="faq-list">
+          <details open><summary>Does FeedGuard upload directly to Amazon?</summary><p>No. The current version generates a reviewed Amazon-compatible file that the seller uploads manually to Seller Central.</p></details>
+          <details><summary>Does FeedGuard change my prices automatically?</summary><p>No. FeedGuard analyzes the feed and flags potentially unsafe changes for review.</p></details>
+          <details><summary>Which files are supported?</summary><p>CSV and XLSX supplier files are supported.</p></details>
+          <details><summary>What happens to blocked rows?</summary><p>Blocked rows are excluded from production export by default.</p></details>
+          <details><summary>Do I need an Amazon API connection?</summary><p>No, not for the current version.</p></details>
+          <details><summary>Can I cancel a paid subscription?</summary><p>Paid subscriptions are managed through the billing provider's customer portal.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="shell contact-card">
+        <div><p class="section-kicker">BETA ACCESS</p><h2>Bring a safer review step to your next supplier feed.</h2><p>Support and sales enquiries are handled through our official store contact.</p></div>
+        <a class="button button-light" href="#pricing">Review plans <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">F</span><span>FeedGuard</span></a><p>A SkyDev product</p></div>
+      <nav aria-label="Footer navigation"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    </div>
+    <div class="shell footer-bottom">
+      <p>FeedGuard is an independent software product and is not affiliated with or endorsed by Amazon.</p>
+      <p>© 2026 SkyDev. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
